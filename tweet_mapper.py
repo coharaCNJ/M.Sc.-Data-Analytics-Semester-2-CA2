@@ -12,7 +12,7 @@ import sys
 
 for line in sys.stdin:
         data = line.strip().split(",")
-        if len(data) == 5:
+        if len(data) == 6:
                 # These are names of the columns/ attributes given to the data file
-                tweetID, Date, Query, Username, Tweet = data
-                print("{0}\t{1}".format(Date, Tweet))
+                Num,tweetID, Date, Query, Username, Tweet = data
+                print("{0},{1}".format(Date, Tweet))
